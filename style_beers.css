@@ -1,8 +1,11 @@
 body {
   background-image: url('images/background.jpg');
 }
+.headers {
+	width: 1272px;
+}
 #header {
-	width: 1014px;
+	width: 1272px;
 	height: 100px;
 	border-bottom: 1px white dashed;
 }
@@ -37,7 +40,7 @@ span {
 	opacity: .8;
 }
 #TitleBarBack {
-	width: 1012px;
+	width: 1272px;
 	height: 30px;
 	position: relative;
 	z-index: 1;
@@ -48,18 +51,47 @@ span {
 }
 #TitleBarBeerPic {
 	width: 140px;
-	height: 30px;
+	height: 25px;
 	position: relative;
 	z-index: 2;
 	top: -30px;
 	float: left;
+	padding-top: 5px;
+	border-right: 1px white dashed;
+}
+
+.title {
+	position: relative;
+	z-index: 2;
+	top: -30px;
+	float: left;
+	font: 1em arial, verdana, sans-serif;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-style:italic;
 }
 #TitleBarBeerName {
 	height: 25px;
-	width: 580px;
+	width: 842px;
 	padding-left: 10px;
 	padding-top: 5px;
-	border-left: 1px white dashed;
+	position: relative;
+	z-index: 2;
+	top: -30px;
+	float: left;
+	font: 1em arial, verdana, sans-serif;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-style:italic;
+}
+
+.beer-info {
+	height: 25px;
+	width: 842px;
+	padding-left: 10px;
+	padding-top: 5px;
 	position: relative;
 	z-index: 2;
 	top: -30px;
@@ -104,21 +136,23 @@ span {
 	padding-left: 20px;
 	padding-right: 20px;
 	float: left;
-	margin-top: 10px;
+	padding-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 10px;
+	padding-bottom: 10px;
+	height: 180px;
+	border-right: 1px white dashed;
 }
 #BeerName {
 	height: 180px;
-	width: 580px;
+	width: 581px;
 	padding-left: 10px;
 	border-left: 1px white dashed;
 	float:left;
 }
 #BeerNameL {
         height: 180px;
-        width: 580px;
+        width: 581px;
         padding-left: 10px;
         border-left: 1px white dashed;
         float:left;
@@ -173,38 +207,13 @@ span {
 	padding-top: 20px;
 	opacity: .8;
 }
-#content-row1a {
+#content-row1a, .content-row {
 	font: 1.5em arial, verdana, sans-serif;
-	width: 1012px;
+	width: 1272px;
 	height: 180px;
-	position: relative;
-	top: -30;
+	display: inline-block;
 }
-#content-rowe {
-	font: 1.5em arial, verdana, sans-serif;
-	width: 1012px;
-	height: 180px;
-}
-#content-row2 {
-	position: relative;
-	width: 1012px;
-	height: 180px;
-}
-#content-row2a {
-	position: absolute;
-	width: 1012px;
-	height: 180px;
-	z-index: 2;
-	font: 1.5em arial, verdana, sans-serif;
-}
-#content-row2g {
-	position: absolute;
-	width: 1012px;
-	height: 180px;
-	background: gray;
-	opacity:0.4;
-	z-index: 1;
-}
+
 #footer {
 	float: right;
 	color: #aeef33;
@@ -264,3 +273,14 @@ span {
     top: 1057;
     left: 0;
 }
+
+#content {
+	width: 1272px;
+	min-height: 700px;
+}
+
+.content-row {
+	position: relative;
+	top: -30px;
+}
+

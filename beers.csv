@@ -1,7 +1,3 @@
-BeerNum,BeerName,Style,Brewery,ABV,IBU,SRM,Status,BeerNameL
-Beer1,BeerName,Style,Brewery,ABV,IBU,SRM,Status,BeerName
-Beer2,BeerName,Style,Brewery,ABV,IBU,SRM,Status,BeerName
-Beer3,BeerName,Style,Brewery,ABV,IBU,SRM,Status,BeerName
-Beer4,BeerName,Style,Brewery,ABV,IBU,SRM,Status,BeerName
-Beer5,BeerName,Style,Brewery,ABV,IBU,SRM,Status,BeerName
-Beer6,BeerName,Style,Brewery,ABV,IBU,SRM,Status,BeerName
+1,Lucky Jack,American Pale Ale,5.5,3,75
+5,Blodklubb øl,Stout,5.3,1,101
+36,The Monstry,Quadruple,9.9,1,10
