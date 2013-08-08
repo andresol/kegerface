@@ -144,15 +144,15 @@ span {
 	padding-left: 20px;
 	padding-right: 20px;
 	float: left;
-	padding-top: 10px;
+	padding-top: 5px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-bottom: 10px;
-	height: 180px;
+	padding-bottom: 5px;
+	height: 160px;
 	border-right: 1px white dashed;
 }
 #BeerName {
-	height: 180px;
+	height: 170px;
 	width: 581px;
 	padding-left: 10px;
 	border-left: 1px white dashed;
@@ -176,7 +176,7 @@ span {
 	height:170px;
 	width: 140px;
 	float:left;
-	padding-top:10px;
+	padding-top:0px;
 	border-left: 1px white dashed;
 	border-right: 1px white dashed;
 	text-align: center;
@@ -195,7 +195,7 @@ span {
 	width: 100px;
 	float:left;
 	padding-left: 30px;
-	padding-top: 20px;
+	padding-top: 10px;
 	opacity: .8;
 }
 
@@ -215,7 +215,7 @@ span {
 	top: -30px;
 	font: 1.5em arial, verdana, sans-serif;
 	width: 1272px;
-	height: 180px;
+	height: 170px;
 	display: inline-block;
 }
 
