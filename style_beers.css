@@ -1,6 +1,9 @@
 body {
   background-image: url('images/background.jpg');
 }
+
+
+
 .headers {
 	width: 1272px;
 }
@@ -71,6 +74,7 @@ span {
 	font-weight: bold;
 	font-style:italic;
 }
+
 #TitleBarBeerName {
 	height: 25px;
 	width: 842px;
@@ -150,13 +154,7 @@ span {
 	border-left: 1px white dashed;
 	float:left;
 }
-#BeerNameL {
-        height: 180px;
-        width: 581px;
-        padding-left: 10px;
-        border-left: 1px white dashed;
-        float:left;
-}
+
 #BeerName h1 {
 	color: white;
 	font: 1.5em Georgia;
@@ -165,18 +163,7 @@ span {
 	-webkit-margin-before: 10px;
 	-webkit-margin-after: 1.82em;
 }
-#BeerNameL h1 {
-        color: white;
-        font: 1.5em Georgia;
-        font-weight: bold;
-        word-wrap: break-word;
-        -webkit-margin-before: 10px;
-        -webkit-margin-after: .8em;
-}
-#BeerNameL h2 {
-        font: 1em Georgia;
-        color: #888888;
-}
+
 #BeerName h2 {
 	font: 1em Georgia;
 	color: #888888;
@@ -207,71 +194,11 @@ span {
 	padding-top: 20px;
 	opacity: .8;
 }
-#content-row1a, .content-row {
-	font: 1.5em arial, verdana, sans-serif;
-	width: 1272px;
-	height: 180px;
-	display: inline-block;
-}
 
 #footer {
 	float: right;
 	color: #aeef33;
         -webkit-margin-before: 4px;
-}
-#links1 {
-	width: 100%;
-	height: 180px;
-	z-index: 5;
-	position: absolute;
-    display: block;
-    top: 157;
-    left: 0;
-}
-#links2 {
-	width: 100%;
-	height: 180px;
-	z-index: 5;
-	position: absolute;
-    display: block;
-    top: 337;
-    left: 0;
-}
-#links3 {
-	width: 100%;
-	height: 180px;
-	z-index: 5;
-	position: absolute;
-    display: block;
-    top: 517;
-    left: 0;
-}
-#links4 {
-	width: 100%;
-	height: 180px;
-	z-index: 5;
-	position: absolute;
-    display: block;
-    top: 697;
-    left: 0;
-}
-#links5 {
-	width: 100%;
-	height: 180px;
-	z-index: 5;
-	position: absolute;
-    display: block;
-    top: 877;
-    left: 0;
-}
-#links6 {
-	width: 100%;
-	height: 180px;
-	z-index: 5;
-	position: absolute;
-    display: block;
-    top: 1057;
-    left: 0;
 }
 
 #content {
@@ -282,5 +209,9 @@ span {
 .content-row {
 	position: relative;
 	top: -30px;
+	font: 1.5em arial, verdana, sans-serif;
+	width: 1272px;
+	height: 180px;
+	display: inline-block;
 }
 
