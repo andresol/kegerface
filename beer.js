@@ -20,7 +20,9 @@ $(function() {
 					var data = '<div id="BeerPic"><img src="/kegerface/images/SRM '+ getSRMPicture(beerinfo[0]) +'.png" height="150"></div>';
 					data += '<div class="beer-info"><h1>' + beerinfo[1] + '</h1> <h2>' + beerinfo[2] + ' <br /></h2></div>';
 					data += '<div id="BeerInfo">' + beerinfo[3] + '<br /><h2>ABV</h2><img src="/kegerface/images/'+ beerinfo[4] +' Hops.png" width="200"></div>';
-					data += '<div id="BeerStatus"><img src="/kegerface/images/kegs/'+ getKegPicture(beerinfo[5],beerinfo[6]) +'.png" width="80"></div>';
+					var kegPicture = getKegPicture(beerinfo[5],beerinfo[6]);
+					if (kegPicture == 102) continue; //Means that this beer is not displayed. Completely empty!!
+					data += '<div id="BeerStatus"><img src="/kegerface/images/kegs/'+ kegPicture +'.png" width="80"></div>';
 					result.push(data);
 				}
 					
@@ -70,7 +72,9 @@ function getKegPicture(amount, capasity) {
 		fillFactor = (amount / capasity) * 100;
 	}
 	if ($.isNumeric(fillFactor)) {
-		if (fillFactor < 5) {
+		if (fillFactor == 0) {
+			result = 102; // Means do not display. Empty.
+		} else if (fillFactor < 5) {
 			result = 0;
 		} else if (fillFactor < 17) {
 			result = 10;
