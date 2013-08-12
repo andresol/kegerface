@@ -15,11 +15,12 @@ $(function() {
 				var i = items.length;
 				var result = new Array(i);
 				while(i--) {
+					if (i == 0) continue; //First row is just info
 					var beerinfo = items[i].split(",");
 					var data = '<div id="BeerPic"><img src="/kegerface/images/SRM '+ getSRMPicture(beerinfo[0]) +'.png" height="150"></div>';
 					data += '<div class="beer-info"><h1>' + beerinfo[1] + '</h1> <h2>' + beerinfo[2] + ' <br /></h2></div>';
 					data += '<div id="BeerInfo">' + beerinfo[3] + '<br /><h2>ABV</h2><img src="/kegerface/images/'+ beerinfo[4] +' Hops.png" width="200"></div>';
-					data += '<div id="BeerStatus"><img src="/kegerface/images/kegs/'+ getKegPicture(beerinfo[5]) +'.png" width="80"></div>';
+					data += '<div id="BeerStatus"><img src="/kegerface/images/kegs/'+ getKegPicture(beerinfo[5],beerinfo[6]) +'.png" width="80"></div>';
 					result.push(data);
 				}
 					
@@ -62,8 +63,12 @@ function getSRMPicture(srm) {
 	return result;
 }
 
-function getKegPicture(fillFactor) {
+function getKegPicture(amount, capasity) {
 	var result = 101;
+	var fillFactor = 101;
+	if (capasity > 0) {
+		fillFactor = (amount / capasity) * 100;
+	}
 	if ($.isNumeric(fillFactor)) {
 		if (fillFactor < 5) {
 			result = 0;

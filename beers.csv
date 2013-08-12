@@ -1,3 +1,6 @@
-1,Lucky Jack,American Pale Ale,5.5,3,75
-5,Blodklubb øl,Stout,5.3,1,101
-36,The Monstry,Quadruple,9.9,1,10
+SRM, NAME, TYPE, ABV, HOPPY, AMOUNT, CAPACITY
+1,Lucky Jack,American Pale Ale,5.5,3,5,10
+15,Blodklubb øl,Belgian Pale Ale,5.3,1,0,0
+40,The Monstry,Quadruple,9.9,1,5,20
+50,Christmas beer,Stout,5.7,2,1,20
+5,Easy IPA,American Pale Ale,5.6,3,15,19
