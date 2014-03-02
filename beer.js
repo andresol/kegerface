@@ -17,6 +17,7 @@ $(function() {
 				while(i--) {
 					if (i == 0) continue; //First row is just info
 					var beerinfo = items[i].split(",");
+					if (beerinfo[1] === undefined) continue;
 					var data = '<div id="BeerPic"><img src="/kegerface/images/SRM '+ getSRMPicture(beerinfo[0]) +'.png" height="150"></div>';
 					data += '<div class="beer-info"><h1>' + beerinfo[1] + '</h1> <h2>' + beerinfo[2] + ' <br /></h2></div>';
 					data += '<div id="BeerInfo">' + beerinfo[3] + '<br /><h2>ABV</h2><img src="/kegerface/images/'+ beerinfo[4] +' Hops.png" width="200"></div>';
